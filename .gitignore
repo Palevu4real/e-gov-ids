@@ -1,0 +1,34 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Pytest/
+venv/
+.venv/
+
+# Node / React
+node_modules/
+dist/
+build/
+.vite/
+
+# PCAP files (don't upload network captures to GitHub)
+*.pcap
+*.pcap.done
+!detection-engine/pcaps/.gitkeep
+
+# Machine Learning Models (too large)
+*.joblib
+*.pkl
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
